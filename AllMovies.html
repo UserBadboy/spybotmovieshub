@@ -8,291 +8,41 @@
     <title>AllMovies</title>
 
     <style>
-        .heading {
-            background-color: rgba(128, 128, 128, 0.277);
-            height: 100px;
-            ;
+      
+.allmovies .container{
+display: grid;
+width: 100%;
+height: 100%;
+grid-template-columns: 20% 20% 20% 20% 20% ;
 
-        }
 
+}
 
+.container a img{
 
+width: 98%;
+height: 98%;
+border: 2px solid gray;
+border-radius: 10px;
+padding: 1.5px 1.5px;
 
-        container {
-            display: grid;
-            height: 130vh;
-            margin-top: 5px;
+}
 
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-            grid-gap: 0.3rem;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-weight: 600;
-            /*text-transform: uppercase; */
-            grid-template-areas:
 
-                " sub-item1 sub-item2 sub-item3 sub-item4 "
-                " sub-item5 sub-item6 sub-item7 sub-item8 "
-                " sub-item9 sub-item10 sub-item11 sub-item12 "
-                /* " sub-item13 sub-item14 sub-item15 sub-item16 "  */
-                " buttom   buttom   buttom   buttom  ";
+p.buttom{
+width: 100vw;
+height: 35%;
+background-color: coral;
+padding: 2% 2%;
 
-        }
+}
 
-        .item img {
-            border: 3px solid rgba(0, 174, 255, 0.403);
-            padding: 6px;
-            background-color: rgba(246, 249, 251, 0.467);
 
-        }
 
-        .sub-item1 {
-            /*background-color: rgb(241, 144, 160);*/
-            grid-area: sub-item1;
-            border-radius: var(--main-radius);
-            padding-top: var(--main-padding);
 
-        }
 
 
-        .sub-item2 {
-            /* background-color: rgb(241, 144, 160);*/
-            grid-area: sub-item2;
-            border-radius: var(--main-radius);
-            padding-top: var(--main-padding);
 
-
-        }
-
-
-        .sub-item3 {
-            /* background-color: rgb(241, 144, 160);*/
-            grid-area: sub-item3;
-            border-radius: var(--main-radius);
-            padding-top: var(--main-padding);
-
-
-        }
-
-
-        .sub-item4 {
-            /* background-color: rgb(241, 144, 160);*/
-            grid-area: sub-item4;
-            border-radius: var(--main-radius);
-            padding-top: var(--main-padding);
-
-
-        }
-
-
-        .buttom {
-            grid-area: buttom;
-            border-radius: var(--main-radius);
-            padding-top: var(--main-padding);
-            margin-left: 35%;
-
-
-
-        }
-
-        img {
-            display: flex;
-            width: 250px;
-            height: 250px;
-        }
-
-
-
-
-
-
-
-        /* Add media-quarry for reponsive website for mobile to laptop-----------> */
-
-
-        @media only screen and (min-width: 280px) and (max-width: 992px) {
-            body {
-                margin: 0px 0px;
-                padding: 0px 0px;
-                height: 70%;
-                width: 70%;
-
-            }
-
-            h1 {
-
-                margin-left: 15px;
-
-
-            }
-
-
-
-            /*---------------------------------------------------change-----------------------------------------------*/
-
-            container {
-                display: grid;
-                width: 50%;
-                height: 130vh;
-                margin-top: 0px;
-
-                grid-template-columns: 0.1fr 0.1fr;
-                grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
-
-
-
-
-                grid-template-areas:
-
-                    " sub-item1 sub-item2 sub-item3 sub-item4 sub-item5 sub-item6 sub-item7 sub-item8 sub-item9 sub-item10 sub-item11 sub-item12 "
-                    /* " sub-item3 sub-item4 "
-                    " sub-item5 sub-item6"
-                    " sub-item7 sub-item8 "
-                    " sub-item9 sub-item10"
-                    " sub-item11 sub-item12 "
-*/
-
-                    " buttom   buttom   buttom   buttom  ";
-
-            }
-
-            .item img {
-                border: 3px solid rgba(0, 174, 255, 0.403);
-          
-                background-color: rgba(246, 249, 251, 0.467);
-                display: grid;
-                margin-right: 50%;
-                width: 150px;
-            }
-
-            .sub-item1 {
-                /*background-color: rgb(241, 144, 160);*/
-                grid-area: sub-item1;
-                border-radius: var(--main-radius);
-                padding-top: var(--main-padding);
-
-            }
-
-
-            .sub-item2 {
-                /* background-color: rgb(241, 144, 160);*/
-                grid-area: sub-item2;
-                border-radius: var(--main-radius);
-                padding-top: var(--main-padding);
-
-
-            }
-
-
-            .sub-item3 {
-                /* background-color: rgb(241, 144, 160);*/
-                grid-area: sub-item3;
-                border-radius: var(--main-radius);
-                padding-top: var(--main-padding);
-
-            }
-
-
-            .sub-item4 {
-                /* background-color: rgb(241, 144, 160);*/
-                grid-area: sub-item4;
-                border-radius: var(--main-radius);
-                padding-top: var(--main-padding);
-
-
-            }
-
-
-
-
-
-            /*---------------------------------------------------change-----------------------------------------------*/
-
-
-
-
-
-            /*-----------------------------------------------3 media quarry-----------------------------------------*/
-
-
-
-            /*-----------------------------------------------2 media quarry-----------------------------------------*/
-            @media only screen and (min-width:px) and (max-width: px) {
-                body {
-                    margin: 0px 0px;
-                    padding: 0px 0px;
-
-                }
-
-                h1 {
-
-                    margin-left: 345px;
-
-
-                }
-
-
-
-
-
-
-            }
-
-
-            /*-----------------------------------------------3 media quarry-----------------------------------------*/
-
-            @media only screen and (min-width:px) and (max-width: px) {
-                body {
-                    margin: 0px 0px;
-                    padding: 0px 0px;
-
-                }
-
-                h1 {
-
-                    margin-left: 50px;
-
-
-                }
-
-
-
-
-
-
-
-            }
-
-
-
-
-            /*-----------------------------------------------2 media quarry-----------------------------------------*/
-            @media only screen and (min-width: px) and (max-width: px) {
-                body {
-                    margin: 0px 0px;
-                    padding: 0px 0px;
-
-                }
-
-                h1 {
-
-                    margin-left: 380px;
-
-                }
-
-
-
-
-            }
-
-            /*-----------------------------------------------3 media quarry-----------------------------------------*/
-
-
-
-
-
-
-            /* End media-quarry for reponsive website for mobile to laptop-----------> */
     </style>
 
 
@@ -301,78 +51,95 @@
 <body>
     <div class="heading">
         <h1> <a href="movie.html"
-                style="list-style: none; text-decoration: none; color: green;  margin-left:10px; padding-top: 14px;"> AllMovies
+                style="list-style: none; text-decoration: none; color: green;  margin-left:10px; padding-top: 14px;">
+                AllMovies
             </a> </h1>
 
 
     </div>
 
 
-    <div class="allmovies" style="width: 100%; height: 100%;  background-color: darkseagreen; ">
+    <div class="allmovies">
 
-        <container id="container-box">
-            <item1 class="sub-item1 item"> <a
+<div class="container">
+
+           <div class="sub-item1 item"> <a
                     href="https://www.bollywoodmdb.com/movies/broadband/pathaan-official-trailer">
                     <img
                         src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/2022/pathan/pathan-poster-4.jpg "></a>
-            </item1>
-            <item2 class="sub-item2 item"> <a
-                    href="drishyam.html"> <img
+            </div>
+
+            <div class="sub-item2 item"> <a href="drishyam.html"> <img
                         src="https://cdn.bollywoodmdb.com/fit-in/cover/300x450/16864_drishyam-2_cover.jpg"> </a>
-            </item2>
-            <item3 class="sub-item3 item"> <a
-                    href="https://www.bollywoodmdb.com/movies/broadband/bhediya-official-trailer"> <img
+            </div>
+
+            <div class="sub-item3 item"> <a
+                    href="bhediya.html"> <img
                         src="https://stat2.bollywoodhungama.in/wp-content/uploads/2022/10/Bhediya.jpeg"> </a>
-            </item3>
-            <item4 class="sub-item4 item"> <a
+            </div>
+
+            <div class="sub-item4 item"> <a
                     href="https://www.bollywoodmdb.com/movies/broadband/vikram-vedha-official-trailer"> <img
                         src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/2022/vikram-vedha-remake/vikram-vedha-remake-poster-4.jpg ">
-                </a> </item4>
-            <item5 class="sub-item5 item"> <a
+                </a> </div>
+
+            <div class="sub-item5 item"> <a
                     href="https://www.bollywoodmdb.com/movies/broadband/bholaa-official-teaser-2"> <img
                         src="https://cdn.bollywoodmdb.com/movies/largethumb/250x350/2021/kaithi-remake/kaithi-remake-poster-4.jpg">
-                </a> </item5>
-            <item6 class="sub-item6 item"> <a href=""> <img
+                </a> </div>
+
+            <div class="sub-item6 item"> <a href=""> <img
                         src="https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16836_gadar-2_cover.jpg ">
-                </a> </item6>
-            <item7 class="sub-item7 item"> <a
+                </a> </div>
+
+            <div class="sub-item7 item"> <a
                     href="https://www.bollywoodmdb.com/movies/broadband/mission-majnu-official-trailer">
                     <img src=" https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16738_mission-majnu_cover.jpg">
-                </a> </item7>
-            <item8 class="sub-item8 item"> <a href=""> <img
+                </a> </div>
+
+            <div class="sub-item8 item"> <a href=""> <img
                         src="https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16825_tiger-3_cover.jpg">
-                </a> </item8>
-            <item9 class="sub-item9 item"> <a
+                </a> </div>
+
+            <div class="sub-item9 item"> <a
                     href="https://www.bollywoodmdb.com/movies/broadband/selfiee-official-trailer">
                     <img src="https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16860_selfiee_cover.jpg ">
-                </a> </item9>
-            <item10 class="item"> <a href=""> <img
-                        src=" https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16806_faraaz_cover.jpg">
-                </a> </item10>
-            <item11 class="item"> <a href=""> <img
-                        src=" https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/250x267/2021/kabhi-eid-kabhi-diwali/poster.jpg">
-                </a> </item11>
-            <item12 class="item"> <a href=""> <img
-                        src=" https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16849_yodha_cover.jpg">
-                </a> </item12>
-            <item13 class="item"> <a href=""> <img
-                        src=" https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16924_the-vaccine-war_cover.jpg">
-                </a> </item13>
-            <item14 class="item"> <a href=""> <img
-                        src="https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16845_chhatriwali_cover.jpg ">
-                </a> </item14>
-            <item15 class="item"> <a href=""> <img
-                        src="https://tse2.explicit.bing.net/th?id=OIP.ov62ktqq01YJu6X91P0dmgHaLu&pid=Api&P=0">
-                </a> </item15>
+                </a> </div>
 
-            <p style=" color: rgb(11, 11, 11);">
+            <div class="item"> <a href=""> <img
+                        src=" https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16806_faraaz_cover.jpg">
+                </a> </div>
+
+            <div class="item"> <a href=""> <img
+                        src=" https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/250x267/2021/kabhi-eid-kabhi-diwali/poster.jpg">
+                </a> </div>
+
+            <div class="item"> <a href=""> <img
+                        src=" https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16849_yodha_cover.jpg">
+                </a> </div>
+
+            <div class="item"> <a href=""> <img
+                        src=" https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16924_the-vaccine-war_cover.jpg">
+                </a> </div>
+
+            <div class="item"> <a href=""> <img
+                        src="https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16845_chhatriwali_cover.jpg ">
+                </a> </div>
+
+            <div class="item"> <a href=""> <img
+                        src="https://tse2.explicit.bing.net/th?id=OIP.ov62ktqq01YJu6X91P0dmgHaLu&pid=Api&P=0">
+                </a> </div>
+
+            <p class="buttom">
                 © Copyright 2018 - 2023 SpyBot SHowMovies Hub, All Rights Reserved.
 
             </p>
 
 
-        </container>
 
+        </div>
+
+      
 
 
     </div>
@@ -389,4 +156,5 @@
 
 
 </body>
+
 </html>
