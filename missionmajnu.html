@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mission-Majnu </title>
+
+    <Style>
+        * {
+
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+
+
+
+        body {
+
+            background-color: rgba(83, 132, 110, 0.411);
+
+        }
+
+        h1 {
+            margin-left: 50px;
+            color: black;
+            margin-top: 16px;
+            font-weight: bolder;
+            text-decoration: underline rgb(9, 9, 9);
+
+        }
+
+
+        .missionmajnuimage {
+
+            padding: 3px 3px;
+            border: 2px solid rgb(11, 11, 11);
+            border-radius: 3px;
+            margin-top: 60px;
+            margin-left: 50px;
+            background-color: rgb(43, 192, 83);
+        }
+
+
+        .missionmajnuyt {
+            margin-left: 50px;
+            margin-top: 50px;
+            width: 50%;
+            height: 65vh;
+
+
+        }
+
+        .pridiv {
+
+            background-color: rgb(9, 229, 229);
+
+
+
+        }
+
+
+        .paragraph1 {
+            float: right;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: -400px;
+            margin-right: 100px;
+            padding: 10px 10px;
+            width: 800px;
+            text-align: justify;
+
+        }
+
+
+
+
+
+
+
+        .play-missionmajnu {
+            color: rgba(4, 112, 49, 0.929);
+            text-decoration: none;
+            background-color: rgba(103, 197, 56, 0.337);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: lighter;
+            margin-left: 135px;
+
+
+
+        }
+
+        .play-logo-missionmajnu{
+            color: rgba(7, 122, 244, 0.929);
+            text-decoration: none;
+            background-color: white;
+            margin-left: 10px;
+
+        }
+
+        .buttom-back-btn {
+            margin-top: 10px;
+            margin-left: 50px;
+            text-decoration: none;
+            list-style: none;
+            border: 2px solid rgb(51, 111, 51);
+            border-radius: 4px;
+            width: 100px;
+            background-color: rgba(127, 255, 212, 0.437);
+
+
+
+
+
+
+
+
+        }
+
+
+        .buttom-back-btn a {
+            text-decoration: none;
+            padding: 20px;
+            padding-top: 5px;
+            color: rgb(85, 79, 3);
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 10px;
+            margin-left: 40px;
+            background-color: rgb(55, 82, 84);
+            color: rgba(119, 208, 107, 0.897);
+
+            padding: 10px 10px;
+
+        }
+
+
+
+        /* Add media-quarry for reponsive website for mobile to laptop-----------> */
+
+
+        @media only screen and (min-width: 280px) and (max-width: 992px) {
+            body {
+                margin: 0px 0px;
+                padding: 0px 0px;
+
+            }
+
+            h1 {
+
+                margin-left: 115px;
+
+
+            }
+
+
+            .missionmajnuimage {
+                margin-left: 50px;
+
+            }
+
+            .play-missionmajnu {
+                margin-left: 140px;
+
+
+            }
+
+
+            .pridiv .paragraph1 {
+                margin-top: 40px;
+                margin-right: 25px;
+                width: 80%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                margin-left: 20px;
+            }
+
+            .missionmajnuyt {
+                margin-top: 20px;
+                margin-left: 55px;
+                width: 70%;
+                height: 70%;
+
+
+            }
+
+            .buttom-back-btn {
+
+                border: 1px solid rgb(51, 111, 51);
+                border-radius: 4px;
+                background-color: rgba(127, 255, 212, 0.437);
+                margin-left: 130px;
+                width: 115px;
+            }
+
+
+            .buttom-back-btn a {
+                text-decoration: none;
+                color: rgb(85, 79, 3);
+                margin-left: 8px;
+
+            }
+
+
+            .footer {
+                margin-top: 25px;
+                margin-bottom: 55px;
+                margin-right: 9px;
+                margin-left: 15px;
+                background-color: rgb(55, 82, 84);
+                color: rgba(119, 208, 107, 0.897);
+                text-align: justify;
+                padding: 5px 5px;
+
+            }
+
+
+        }
+
+        /*-----------------------------------------------3 media quarry-----------------------------------------*/
+
+
+
+        @media only screen and (min-width: 500px) and (max-width: 1080px) {
+            body {
+                margin: 0px 0px;
+                padding: 0px 0px;
+
+            }
+
+            h1 {
+
+                margin-left: 220px;
+
+
+            }
+
+
+            .missionmajnuimage {
+                margin-left: 150px;
+
+            }
+
+            .play-missionmajnu {
+                margin-left: 240px;
+
+
+            }
+
+
+            .pridiv .paragraph1 {
+                margin-top: 40px;
+                margin-right: 50px;
+                width: 80%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+            }
+
+            .missionmajnu {
+                margin-top: 20px;
+                margin-left: 85px;
+                width: 70%;
+                height: 70%;
+
+
+            }
+
+            .buttom-back-btn {
+
+                border: 1px solid rgb(51, 111, 51);
+                border-radius: 4px;
+                background-color: rgba(127, 255, 212, 0.437);
+                margin-left: 230px;
+            }
+
+
+            .buttom-back-btn a {
+                text-decoration: none;
+                color: rgb(85, 79, 3);
+
+            }
+
+
+            .footer {
+                margin-top: 25px;
+                margin-bottom: 55px;
+                margin-right: 9px;
+                margin-left: 9px;
+                background-color: rgb(55, 82, 84);
+                color: rgba(119, 208, 107, 0.897);
+                text-align: justify;
+                padding: 10px 10px;
+
+            }
+
+
+        }
+
+
+
+        /*-----------------------------------------------2 media quarry-----------------------------------------*/
+        @media only screen and (min-width: 820px) and (max-width: 1080px) {
+            body {
+                margin: 0px 0px;
+                padding: 0px 0px;
+
+            }
+
+            h1 {
+
+                margin-left: 345px;
+
+
+            }
+
+
+            .missionmajnuimage {
+                margin-left: 280px;
+
+            }
+
+            .play-missionmajnu {
+                margin-left: 370px;
+
+
+            }
+
+
+            .pridiv .paragraph1 {
+                margin-top: 10px;
+                width: 90%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                margin-right: 30px;
+            }
+
+            .missionmajnuyt {
+                margin-top: 20px;
+                width: 70%;
+                height: 100%;
+                margin-left: 120px;
+
+            }
+
+            .buttom-back-btn {
+
+                border: 1px solid rgb(51, 111, 51);
+                border-radius: 4px;
+                background-color: rgba(127, 255, 212, 0.437);
+                margin-left: 130px;
+            }
+
+
+            .buttom-back-btn a {
+                text-decoration: none;
+                color: rgb(85, 79, 3);
+
+            }
+
+
+            .footer {
+                margin-top: 10px;
+                margin-left: 40px;
+                background-color: rgb(55, 82, 84);
+                color: rgba(119, 208, 107, 0.897);
+
+                padding: 10px 10px;
+
+            }
+
+
+
+
+
+        }
+
+
+        /*-----------------------------------------------3 media quarry-----------------------------------------*/
+
+        @media only screen and (min-width: 1035px) and (max-width: 1132px) {
+            body {
+                margin: 0px 0px;
+                padding: 0px 0px;
+
+            }
+
+            h1 {
+
+                margin-left: 450px;
+
+
+            }
+
+
+            .missionmajnuimage {
+                margin-left: 380px;
+
+            }
+
+            .play-missionmajnu {
+                margin-left: 470px;
+
+
+            }
+
+
+            .pridiv .paragraph1 {
+                margin-top: 10px;
+                width: 90%;
+                height: 90%;
+                align-items: center;
+                justify-content: center;
+                margin-right: 50px;
+
+            }
+
+            .missionmajnuyt {
+                margin-top: 20px;
+                margin-left: 150px;
+                width: 70%;
+                height: 70%;
+
+
+            }
+
+            .buttom-back-btn {
+
+                border: 1px solid rgb(51, 111, 51);
+                border-radius: 4px;
+                background-color: rgba(127, 255, 212, 0.437);
+                margin-left: 150px;
+            }
+
+
+            .buttom-back-btn a {
+                text-decoration: none;
+                color: rgb(85, 79, 3);
+
+            }
+
+
+
+            .footer {
+                margin-top: 10px;
+                margin-left: 20px;
+                background-color: rgb(55, 82, 84);
+                color: rgba(119, 208, 107, 0.897);
+
+                padding: 5px 5px;
+
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+
+        /*-----------------------------------------------2 media quarry-----------------------------------------*/
+        @media only screen and (min-width: 1133px) and (max-width: 1275px) {
+            body {
+                margin: 0px 0px;
+                padding: 0px 0px;
+
+            }
+
+            h1 {
+
+                margin-left: 380px;
+
+            }
+
+
+            .missionmajnuimage {
+                margin-left: 280px;
+
+            }
+
+            .play-missionmajnu {
+                margin-left: 370px;
+
+
+            }
+
+
+            .pridiv .paragraph1 {
+                margin-top: 10px;
+                margin-right: 30px;
+                width: 90%;
+                height: 70%;
+                align-items: center;
+                justify-content: center;
+                text-align: justify;
+
+            }
+
+            .missionmajnuyt {
+                margin-top: 20px;
+                margin-left: 150px;
+                width: 70%;
+                height: 70%;
+
+
+            }
+
+            .buttom-back-btn {
+
+                border: 1px solid rgb(51, 111, 51);
+                border-radius: 4px;
+                background-color: rgba(127, 255, 212, 0.437);
+                margin-left: 355px;
+            }
+
+
+            .buttom-back-btn a {
+                text-decoration: none;
+                color: rgb(85, 79, 3);
+
+            }
+
+
+            .footer {
+                margin-top: 10px;
+                margin-left: 50px;
+                background-color: rgb(55, 82, 84);
+                color: rgba(119, 208, 107, 0.897);
+
+                padding: 10px 10px;
+
+            }
+
+
+        }
+
+        /*-----------------------------------------------3 media quarry-----------------------------------------*/
+
+
+
+
+
+
+        /* End media-quarry for reponsive website for mobile to laptop-----------> */
+    </Style>
+
+
+</head>
+
+<body>
+    <nav>
+
+        <h1> Megan </h1>
+
+
+        <img class="missionmajnuimage"
+            src="https://cdn.bollywoodmdb.com/fit-in/cover/250x267/16738_mission-majnu_cover.jpg" alt="Avatar"
+            style="width:250px; height:360px;">
+
+        <br><br>
+        <anchordiv1 class="anchordiv1">
+            <a class="play-missionmajnu" href="https://www.youtube.com/embed/Gw77Nx4eBMc"> Mission-Majnu </a>
+            <a class="play-logo-missionmajnu" href="https://www.youtube.com/embed/Gw77Nx4eBMc"> ▶ </a>
+        </anchordiv1>
+
+        <pridiv class="pridiv">
+            <p class="paragraph1"> Drishyam 2 is a 2021 Indian Malayalam-language crime thriller film written and
+                directed by Jeethu Joseph and produced by Antony Perumbavoo.
+
+                Drishyam 2 received positive reviews from critics and audience. [17] Archika Khurana of The Times of
+                India rated the film 3.5 out of 5 stars and wrote: "Drishyam
+                2 dishes out plenty of twists and turns to keep you hooked throughout, just like its predecessor. And
+                the story of the Salgaokars will continue to remain in public memory". Offering a detailed comparison
+                between the originalMalayalam Drishyam 2 starring Mohanlal and this Hindi remake, she wrote: "This is an
+                adaptation that,while faithfully reproducing Jeethu Joseph’s story, gives us a flavour of the cultural
+                setting to which
+                it has been transplanted from Kerala and does things with the new location that mark a refreshing change
+                from the resurgence of prejudice and community stereotyping witnessed in Bollywood in the last
+                decade."[19] Rohit Bhatnagar of The Free Press Journal rated the film 3.5 out of 5 stars and wrote:
+                "Drishyam 2 ticks almost every box on the checklist of a Bollywood film lover and makes it a great watch
+                for massy cinephiles". Devesh Sharma of Filmfare rated the film 3.5 out of 5 stars and wrote:
+                "Everything hinges on the performances and the entire cast has chipped in with their best efforts. Tabu
+                looks the very picture of grief and angst. Akshaye Khanna is the new player in the field and his quirks
+                and punch dialogue make you smile. The film rests squarely on Ajay Devgn’s able shoulders".[21] Shalini
+                Langer of The Indian Express rated the film 3 out of 5 stars and wrote: "The Ajay Devgn-Akshaye
+                Khanna-Tabu starrer very deftly picks up from where the two main protagonists, both fierce parents, left
+                off in Drishyam. Its execution is not as smooth as the last time though".[22] Sonil Dedhia of News 18
+                rated the film 3 out of 5 stars and wrote: "Drishyam 2 doesn’t feel nearly as tense or urgent as it
+                ought to, and its plot simply isn’t as deliciously complex as it could’ve been. As a result, it’s a
+                watchable film, but not an unforgettable one".
+
+            </p>
+
+
+        </pridiv>
+
+    </nav>
+
+    <div1>
+        <iframe width="942" height="530" class="missionmajnuyt"  src="https://www.youtube.com/embed/Gw77Nx4eBMc"
+            title="Mission Majnu | Sidharth Malhotra, Rashmika Mandanna | Official Trailer | Netflix India"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+    </div1>
+    <div class="buttom-back-btn">
+        <a href="index.html"> Go Back </a>
+
+    </div>
+
+
+
+    <p class="footer"> Copyright &copy; and &reg; Since
+        Under SpyBot SHowMovies Hub.com : (Project Is Done By SpyBot)
+    </p>
+
+
+
+</body>
+
+</html>
