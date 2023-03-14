@@ -5,43 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllMovies </title>
+    <title>AllMovies</title>
 
     <style>
-        body {
-
-            margin: 0px 0px;
-            padding: 0px 0px;
-
-
-        }
-
-
-        h1 a {
-
-            list-style: none;
-            text-decoration: none;
+        .heading-content {
             color: green;
-            margin-left: 3%;
-            padding-top: 14px;
+
 
 
         }
-
 
         .allmovies .container {
             display: grid;
-            width: 100vw;
-            height: 80vh;
+            width: 98vw;
+            height: 48vh;
             grid-template-columns: 20% 20% 20% 20% 20%;
-            margin-left: 3%;
+
 
         }
 
         .container a img {
 
-            width: 75%;
-            height: 55%;
+            width: 97%;
+            height: 98%;
             border: 2px solid gray;
             border-radius: 10px;
             padding: 1.5px 1.5px;
@@ -49,26 +35,559 @@
         }
 
 
-        .buttom {
-            width: 100vw;
-            height: 3%;
-            background-color: coral;
-            padding: 7% 7%;
-            margin-left: -114%;
-            margin-top: 500px;
+        .next-container {
+            margin-top: 5%;
+            width: 200%;
+            margin-left: 150%;
+
+
+            display: flex;
+
+
+
 
         }
-    </style>
 
+        .downbox {
+            margin-top: 60%;
+            width: 20%;
+            margin-left: 1%;
+        }
+
+
+        .nextpage {
+
+            margin-left: 10%;
+            background-color: rgba(7, 128, 241, 0.588);
+            border: 3px solid rgba(2, 16, 9, 0.844);
+            border-radius: 8px;
+            width: 15%;
+            height: 20px;
+            padding: 10px 10px;
+            text-decoration: none;
+            color: rgb(241, 11, 57);
+
+
+
+        }
+
+        .nextpage2 {
+            margin-left: 10%;
+            background-color: rgba(7, 128, 241, 0.588);
+            border: 3px solid rgba(2, 16, 9, 0.844);
+            border-radius: 8px;
+            width: 15%;
+            height: 20px;
+            padding: 10px 10px;
+            text-decoration: none;
+            color: rgb(241, 11, 57);
+
+
+
+
+        }
+
+        .nextpage3 {
+
+            margin-left: 10%;
+            background-color: rgba(7, 128, 241, 0.588);
+            border: 3px solid rgba(2, 16, 9, 0.844);
+            border-radius: 8px;
+            width: 15%;
+            height: 20px;
+            padding: 10px 10px;
+            text-decoration: none;
+            color: rgb(241, 11, 57);
+
+
+        }
+
+
+        .buttom-box {
+
+            margin-top: 15%;
+            width: 98.5vw;
+            height: 5vh;
+            background-color: coral;
+            margin-left: -7%;
+            margin-top: 8%;
+
+        }
+
+
+
+        .buttom {
+
+            padding-top: 0.6%;
+            margin-left: 0.8%;
+            margin-bottom: 20%;
+
+
+
+        }
+
+
+
+
+
+
+
+
+        /*--------------------------------Adding media quarry---------------------------------*/
+        @media only screen and (min-width: 280px) and (max-width: 819px) {
+
+            .heading-content {
+                color: green;
+                font-size: 70%;
+
+
+            }
+
+            .allmovies .container {
+                display: grid;
+                width: 97vw;
+                height: 98vh;
+                grid-template-columns: 25% 25% 25% 25%;
+
+
+            }
+
+            .container a img {
+
+                width: 92%;
+                height: 60%;
+                border: 2px solid gray;
+                border-radius: 10px;
+                padding: 1.5px 1.5px;
+
+            }
+
+            .item {
+                margin-top: -82px;
+
+
+
+            }
+
+
+            .downbox {
+                margin-top: 7%;
+                width: 25%;
+                margin-left: 1%;
+
+            }
+
+            .next-container {
+                font-size: 10px;
+                margin-top: -100%;
+                width: 350%;
+                margin-left: 10%;
+
+
+
+
+
+            }
+
+
+            .nextpage {
+
+                margin-left: 10%;
+                background-color: rgba(7, 128, 241, 0.588);
+                border: 3px solid rgba(2, 16, 9, 0.844);
+                border-radius: 8px;
+                width: 15%;
+                height: 0.1%;
+                padding: 10px 10px;
+                text-decoration: none;
+                color: rgb(241, 11, 57);
+
+
+
+            }
+
+            .nextpage2 {
+                margin-left: 10%;
+                background-color: rgba(7, 128, 241, 0.588);
+                border: 3px solid rgba(2, 16, 9, 0.844);
+                border-radius: 8px;
+                width: 15%;
+                height: 0.1%;
+                padding: 10px 10px;
+                text-decoration: none;
+                color: rgb(241, 11, 57);
+
+
+
+
+            }
+
+            .nextpage3 {
+
+                margin-left: 10%;
+                background-color: rgba(7, 128, 241, 0.588);
+                border: 3px solid rgba(2, 16, 9, 0.844);
+                border-radius: 8px;
+                width: 15%;
+                height: 0.1%;
+                padding: 10px 10px;
+                text-decoration: none;
+                color: rgb(241, 11, 57);
+
+
+            }
+
+
+            .buttom-box {
+
+                margin-top: 15%;
+                width: 90vw;
+                height: 10%;
+                background-color: coral;
+                margin-left: 5%;
+                margin-top: 30%;
+
+            }
+
+
+
+            .buttom {
+
+                margin-top: 0.7%;
+                margin-left: 0.8%;
+                margin-bottom: 20%;
+
+
+
+            }
+
+
+
+
+
+
+        }
+
+
+
+
+        @media only screen and (min-width: 768px) and (max-width: 1305px) {
+
+
+            .heading-content {
+                color: green;
+                font-size: 115%;
+
+
+            }
+
+            .allmovies .container {
+                display: grid;
+                width: 97vw;
+                height: 98vh;
+                grid-template-columns: 25% 25% 25% 25%;
+
+
+            }
+
+            .container a img {
+
+                width: 95%;
+                height: 60%;
+                border: 2px solid gray;
+                border-radius: 10px;
+                padding: 1.5px 1.5px;
+
+            }
+
+            .item {
+                margin-top: -170px;
+
+
+
+            }
+
+
+            .downbox {
+                margin-top: 10%;
+                width: 25%;
+                margin-left: 1%;
+
+            }
+
+            .next-container {
+                font-size: 2vh;
+                margin-top: -100%;
+                width: 490%;
+                margin-left: -39%;
+
+
+
+
+
+            }
+
+
+            .nextpage {
+
+                margin-left: 10%;
+                background-color: rgba(7, 128, 241, 0.588);
+                border: 3px solid rgba(2, 16, 9, 0.844);
+                border-radius: 8px;
+                width: 15%;
+                height: 0.1%;
+                padding: 10px 10px;
+                text-decoration: none;
+                color: rgb(241, 11, 57);
+
+
+
+            }
+
+            .nextpage2 {
+                margin-left: 10%;
+                background-color: rgba(7, 128, 241, 0.588);
+                border: 3px solid rgba(2, 16, 9, 0.844);
+                border-radius: 8px;
+                width: 15%;
+                height: 0.1%;
+                padding: 10px 10px;
+                text-decoration: none;
+                color: rgb(241, 11, 57);
+
+
+
+
+            }
+
+            .nextpage3 {
+
+                margin-left: 10%;
+                background-color: rgba(7, 128, 241, 0.588);
+                border: 3px solid rgba(2, 16, 9, 0.844);
+                border-radius: 8px;
+                width: 15%;
+                height: 0.1%;
+                padding: 10px 10px;
+                text-decoration: none;
+                color: rgb(241, 11, 57);
+
+
+            }
+
+
+            .buttom-box {
+
+                margin-top: 15%;
+                width: 90vw;
+                height: 6vh;
+                background-color: coral;
+                margin-left: 5%;
+                margin-top: 30%;
+
+            }
+
+
+
+            .buttom {
+                font-size: 1.7vh;
+                margin-top: 0.7%;
+                margin-left: 0.8%;
+                margin-bottom: 20%;
+                padding-top: 2vh;
+
+
+            }
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (min-width: 820px) and (max-width: 1180px) {
+
+
+            .heading-content {
+                color: green;
+                font-size: 110%;
+
+
+            }
+
+            .allmovies .container {
+                display: grid;
+                width: 97vw;
+                height: 100vh;
+                grid-template-columns: 25% 25% 25% 25%;
+
+
+            }
+
+            .container a img {
+
+                width: 95%;
+                height: 60%;
+                border: 2px solid gray;
+                border-radius: 10px;
+                padding: 1.5px 1.5px;
+
+            }
+
+            .item {
+                margin-top: -155px;
+
+
+
+            }
+
+
+            .downbox {
+                margin-top: 7%;
+                width: 25%;
+                margin-left: 1%;
+
+            }
+
+            .next-container {
+
+                margin-top: -92%;
+                width: 350%;
+                margin-left: 18%;
+                font-size: 23px;
+
+
+
+
+            }
+
+
+            .nextpage {
+
+                margin-left: 10%;
+                background-color: rgba(10, 110, 203, 0.588);
+                border: 3px solid rgba(2, 16, 9, 0.844);
+                border-radius: 8px;
+                width: 15%;
+                height: 0.1%;
+                padding: 10px 10px;
+                text-decoration: none;
+                color: rgb(241, 11, 57);
+
+
+
+            }
+
+            .nextpage2 {
+                margin-left: 10%;
+                background-color: rgba(7, 128, 241, 0.588);
+                border: 3px solid rgba(2, 16, 9, 0.844);
+                border-radius: 8px;
+                width: 15%;
+                height: 0.1%;
+                padding: 10px 10px;
+                text-decoration: none;
+                color: rgb(241, 11, 57);
+
+
+
+
+            }
+
+            .nextpage3 {
+
+                margin-left: 10%;
+                background-color: rgba(7, 128, 241, 0.588);
+                border: 3px solid rgba(2, 16, 9, 0.844);
+                border-radius: 8px;
+                width: 15%;
+                height: 0.1%;
+                padding: 10px 10px;
+                text-decoration: none;
+                color: rgb(241, 11, 57);
+
+
+            }
+
+
+            .buttom-box {
+
+
+                width: 98vw;
+                height: 7vh;
+                background-color: coral;
+                margin-left: -4%;
+                font-size: 2.5vh;
+
+
+            }
+
+
+
+            .buttom {
+
+                margin-top: 4.8%;
+                margin-left: 0.8%;
+
+
+
+
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (min-width: 1446px) and (max-width: 2000px) {}
+
+
+
+
+
+
+        /* @media only screen and (min-width: 280px) and (max-width: 992px) {}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* --------------------------------------media quarry ended--------------------------------------*/
+    </style>
 
 
 </head>
 
 <body>
-
     <div class="heading">
-        <h1> <a href="AllMovie.html"
-                style="list-style: none; text-decoration: none; color: green;  margin: left 3%; padding-top: 14px;">
+        <h1> <a class="heading-content" href="movie.html">
                 AllMovies
             </a> </h1>
 
@@ -76,31 +595,59 @@
     </div>
 
 
-
     <div class="allmovies">
 
         <div class="container">
-            <div class="item">
-                <a href="megan.html">
-                    <img src="https://tse2.explicit.bing.net/th?id=OIP.ov62ktqq01YJu6X91P0dmgHaLu&pid=Api&P=0">
-                </a>
+
+            <div class="container">
+                <div class="item">
+                    <a href="megan.html">
+                        <img src="https://tse2.explicit.bing.net/th?id=OIP.ov62ktqq01YJu6X91P0dmgHaLu&pid=Api&P=0">
+                    </a>
+    
+                </div>
+    
+           
+
+        <div class="downbox">
+
+            <div class="next-container">
+                
+                <a class="nextpage2" href="nextpage2.html"> Nextpage 2 </a>
+                <a class="nextpage3" href="nextpage3.html"> Nextpage 3 </a>
+
+
 
             </div>
 
 
+            <div class="buttom-box">
+                <p class="buttom">
+                    © Copyright 2018 - 2023 SpyBot SHowMovies Hub, All Rights Reserved.
 
+                </p>
 
-
-            <p class="buttom">
-                © Copyright 2018 - 2023 SpyBot SHowMovies Hub, All Rights Reserved.
-
-            </p>
-
-
+            </div>
 
 
         </div>
+
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
