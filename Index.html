@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Spy_BotHUb </title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px 0px;
+            padding: 0px 0px;
+
+
+        }
+
+        .nav-box {
+
+            background-color: #0a0a0a;
+            height: 12%;
+
+
+
+
+        }
+
+
+
+        .menu-box {
+            display: flex;
+            list-style: none;
+
+
+        }
+
+
+        .menu-item {
+            display: flex;
+            list-style: none;
+           
+            width: 90vw;
+            margin-left: 5%;
+            margin-top: 0.3%;
+        }
+
+        .logo-heading {
+
+            margin-top: 4vh;
+            margin-left: 1%;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(127, 255, 212, 0.907);
+            border-radius: 7px;
+            width: 13%;
+            height: 13%;
+            padding-left: 1%;
+        }
+
+
+        .list-item {
+            margin-left: 2%;
+            font-size: x-large;
+            margin-top: 2%;
+            color: rgba(255, 228, 196, 0.756);
+            text-decoration: none;
+
+
+
+        }
+
+        .list-item:hover {
+            color: whitesmoke;
+            cursor: pointer;
+
+
+
+
+        }
+
+        /*Genres box, symbol hover and and items in genres */
+        .genres-box {
+            position: relative;
+            display: block;
+            margin-left: 1%;
+            font-size: 120%;
+            margin-top: 1.6%;
+            border-radius: 7px;
+            width: 10%;
+            height: 90%;
+
+        }
+
+
+
+
+
+        .genresbutton {
+            margin-left: 2%;
+            font-size: 130%;
+            margin-top: 1.5%;
+            border: 2px solid red;
+            border-radius: 7px;
+            width: 101%;
+            height: 66%;
+            background-color: rgb(123, 121, 121);
+
+        }
+
+        .genresbutton:hover {
+            background-color: rgb(14, 13, 13);
+            color: #f6f2f5;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+
+        }
+
+
+        /* .genresDropdown {
+
+            font-size: 70%;
+
+
+
+        }   */
+
+        .genres-items {
+            display: none;
+            position: absolute;
+            overflow: auto;
+            z-index: 1;
+            margin-top: 30%;
+            margin-left: -98vh;
+
+            background-color: rgba(7, 21, 16, 0.501);
+            width: 73vw;
+            height: 33%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+        }
+
+
+        .genressub-item {
+
+            margin-left: 0.8%;
+            display: flex;
+            text-decoration: none;
+            color: rgb(191, 247, 6);
+
+            border: 2px solid rgb(245, 10, 10);
+            border-radius: 3px;
+
+
+        }
+
+        .genressub-item:hover {
+
+            color: cornflowerblue;
+
+        }
+
+
+        .show {
+            display: flex;
+            height: 50%;
+
+        }
+
+
+        /*Ended -----------Genres box, symbol hover and and items in genres */
+
+
+
+
+        .slider {
+            width: 98vw;
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+        }
+
+        #slider a img {
+            width: 20vw;
+            height: 25vw;
+            text-align: center;
+            overflow: hidden;
+            margin-left: 35%;
+            margin-top: 7%;
+            border: 2px solid gray;
+            border-radius: 10px;
+            padding: 0.5%;
+
+
+        }
+
+
+
+
+        .imageinfo {
+            font-size: xx-large;
+            float: right;
+            margin-top: -24.4%;
+            margin-right: 22%;
+            text-decoration: none;
+            color: #0697f7;
+            font: bold;
+            background-color: #b1d4e02d;
+            width: 20vw;
+            height: 47vh;
+            padding: 1%;
+            border-radius: 9px;
+
+        }
+
+
+
+
+        .Rcontent {
+
+            font-size: large;
+            color: #f6f2f5;
+
+        }
+
+        .Ycontent {
+            font-size: large;
+            color: #f6f2f5;
+
+        }
+
+        .Datedurcontent {
+            font-size: large;
+            color: #f6f2f5;
+
+
+
+        }
+
+        .Ccontent {
+            font-size: 55%;
+            color: #fed405;
+            text-align: justify;
+
+
+        }
+
+
+
+
+
+
+
+
+
+        /* .slider>a {
+            display: inline-flex;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: white;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 0 0.5rem 0;
+            position: relative;
+        }
+
+        .slider>a:active {
+            top: 1px;
+            color: #1c87c9;
+        }
+
+        .slider>a:focus {
+            background: #eee;
+        }
+*/
+        /* Don't need button navigation */
+        @supports (scroll-snap-type) {
+            #slider>a {
+                display: none;
+            }
+        }
+
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+
+        body {
+
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(8, 6, 1, 1) 100%);
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="nav-box">
+
+
+
+        <div class="menu-box">
+
+            <h2 class="logo-heading"> Spy-BotHub </h2>
+
+            <span class="menu-item">
+                <a href="Index.html" class="list-item"> Home </a>
+                <a href="AllMovies.html" class="list-item"> Movies </a>
+                <a href="web-series.html" class="list-item"> Web-Series </a>
+                <a href="kids.html" class="list-item"> Kids </a>
+                <a href="tvshow.html" class="list-item"> Tv-Show </a>
+                <a href="Premium.html" class="list-item"> Premium </a>
+
+                <div class="genres-box">
+                    <button class="genresbutton" onclick="genresDropdown()"> Genres&#9663; </button>
+
+                    <div id="Genres-element" class="genres-items">
+
+                        <a href="popular.html" class="genressub-item">Popular</a>
+                        <a href="crime.html" class="genressub-item">Crime</a>
+                        <a href="suspense.html" class="genressub-item">Suspense & Thriller</a>
+                        <a href="action.html" class="genressub-item">Action</a>
+                        <a href="fantasy.html" class="genressub-item">Sci-Fi & Fantasy</a>
+                        <a href="documentary.html" class="genressub-item">Documentary</a>
+                        <a href="horror.html" class="genressub-item">Horror</a>
+                        <a href="drama.html" class="genressub-item">Drama</a>
+                        <a href="war.html" class="genressub-item">War & Politics</a>
+                        <a href="comedy.html" class="genressub-item">Comedy</a>
+                        <a href="romance.html" class="genressub-item">Romance</a>
+                        <a href="anime.html" class="genressub-item">Anime</a>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-----image and rating content------------------------------------------------------------------------------------------------------------->
+
+    <div id="slider">
+
+        <a href="#slide-1">
+
+            <span id="slidebox">
+
+
+                <img src="https://media5.bollywoodhungama.in/wp-content/uploads/2023/03/Gumraah.jpg">
+
+                <span class="imageinfo"> Gumraah <br>
+                    <span class="Rcontent"> IMDb Rating:&#11088; N/A </span> <br>
+
+                    <span class="Ycontent"> Your Rating: N/A
+                        <span style="font-size:150%;color:yellow;">&starf;</span> Rate
+
+                    </span> <br>
+
+                    <span class="Datedurcontent">
+                        Released-Date: 7 April, 2023 <br>
+
+
+
+                    </span> <br>
+                    <span class="Ccontent"> </span> <br>
+
+                </span>
+            </span>
+
+        </a>
+
+
+
+        <a href="#slide-1">
+
+            <span id="slidebox">
+
+
+                <img src="https://assets.thehansindia.com/h-upload/2023/03/10/1340879-dasara.jpg">
+
+                <span class="imageinfo"> Dasara <br>
+                    <span class="Rcontent"> IMDb Rating:&#11088; N/A </span> <br>
+
+                    <span class="Ycontent"> Your Rating: N/A
+                        <span style="font-size:150%;color:yellow;">&starf;</span> Rate
+
+                    </span> <br>
+
+                    <span class="Datedurcontent">
+                        Released-Date: 30 March, 2023 <br>
+
+
+
+                    </span> <br>
+                    <span class="Ccontent"> </span> <br>
+
+                </span>
+            </span>
+
+        </a>
+
+
+
+
+        <a href="#slide-0">
+
+            <span id="slidebox">
+
+
+                <img
+                    src="https://resizing.flixster.com/QnjlMcBlxq64Y5rT1IiYcdPQdhQ=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzI2OWNlNjU4LTg2NDMtNGI5Zi05YjU5LTk5MjJkOWZjMWUwZi5qcGc=">
+
+                <span class="imageinfo"> Pathaan <br>
+                    <span class="Rcontent"> IMDb Rating:&#11088; 6.4/10 </span> <br>
+
+                    <span class="Ycontent"> Your Rating: N/A
+                        <span style="font-size:150%;color:yellow;">&starf;</span> Rate
+
+                    </span> <br>
+
+                    <span class="Datedurcontent">
+                        Released-Date: Jan, 2023 <br>
+                        Duration: 2Hr 26Min
+
+
+                    </span> <br>
+                    <span class="Ccontent"> </span> <br>
+
+                </span>
+            </span>
+
+        </a>
+
+
+
+
+
+
+        <a href="#slide-2">
+
+            <span id="slidebox">
+
+
+                <img class="posterpathan"
+                    src="https://stat2.bollywoodhungama.in/wp-content/uploads/2022/10/Bhediya.jpeg">
+
+                <span class="imageinfo"> Bhediya <br>
+                    <span class="Rcontent"> IMDb Rating:&#11088; 7.3/10 </span> <br>
+
+                    <span class="Ycontent"> Your Rating:
+                        <span style="font-size:150%;color:yellow;">&starf;</span> Rate
+
+                    </span> <br>
+
+                    <span class="Datedurcontent">
+                        Released-Date: 25 Jan, 2023 <br>
+                        Duration: 2hr 26 Min
+
+
+                    </span> <br>
+                    <span class="Ccontent"> </span> <br>
+
+                </span>
+            </span>
+
+
+        </a>
+        <a href="#slide-3">
+
+            <span id="slidebox">
+
+
+                <img class="posterpathan"
+                    src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/2022/vikram-vedha-remake/vikram-vedha-remake-poster-4.jpg">
+
+
+                <span class="imageinfo"> Vikram Vedha <br>
+                    <span class="Rcontent"> IMDb Rating:&#11088; 7.1/10 </span> <br>
+
+                    <span class="Ycontent"> Your Rating: <span style="font-size:150%;color:yellow;">&starf;</span> Rate
+                    </span>
+                    <br>
+                    <span class="Datedurcontent">
+
+                        Released-Date: 30 sept., 2023
+                        Duration: 2hr 26 Min
+
+                    </span>
+                    <span class="Ccontent"> </span>
+
+                </span>
+            </span>
+
+        </a>
+        <a href="#slide-4">
+
+            <span id="slidebox">
+
+
+                <img class="posterpathan"
+                    src="https://cdn.bollywoodmdb.com/movies/largethumb/250x350/2021/kaithi-remake/kaithi-remake-poster-4.jpg">
+
+
+                <span class="imageinfo"> Bholaa <br>
+                    <span class="Rcontent">IMDb Rating:&#11088; null/10 </span> <br>
+
+                    <span class="Ycontent"> Your Rating:<span style="font-size:150%;color:yellow;">&starf;</span> Rate
+                    </span> <br>
+                    <span class="Datedurcontent">
+
+                        Assumption Released-Date: 30 March, 2023 <br>
+                        Duration: 2hr 26 Min
+
+
+                    </span> <br>
+                    <span class="Ccontent"> Bholaa is scheduled to be thea-trically released in India on 30 March 2023
+                        in 2D,
+                        3D and IMAX 3D. </span>
+
+                </span>
+            </span>
+
+
+        </a>
+        <a href="#slide-5">
+
+            <span id="slidebox">
+
+
+                <img class="posterpathan"
+                    src="https://stat4.bollywoodhungama.in/wp-content/uploads/2023/01/Gadar-2-306x393.jpg">
+
+                <span class="imageinfo"> Gadar 2 <br>
+                    <span class="Rcontent">IMDb Rating:&#11088; null/10 </span> <br>
+
+                    <span class="Ycontent"> Your Rating:<span style="font-size:150%;color:yellow;">&starf;</span> Rate
+                    </span> <br>
+                    <span class="Datedurcontent">
+
+                        Assumption Released-Date: 25 January, 2023 <br>
+                        Duration: 2hr 26 Min
+
+
+                    </span>
+                    <span class="Ccontent"> </span>
+
+                </span>
+            </span>
+
+        </a>
+
+        <!--
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusSlide(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusSlide(1)">&#10095;</button>
+
+-->
+
+    </div>
+
+
+
+
+    </div>
+    <!-----image and rating content------------------------------------------------------------------------------------------------------------>
+
+    <script>
+
+        /* ------------for photoslider-------------*/
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementById("slider").getElementsByTagName("img");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+
+
+
+
+
+        /*--------------- f0r Imageinfo slider -----------  */
+
+        var slideIndexinfo = 1;
+        showslides(slideIndexinfo);
+
+        function showslides(n) {
+
+            var i;
+            var x = document.getElementsByClassName("imageinfo");
+            if (n > x.length) { slideIndexinfo = 1 }
+            if (n < 1) { slideIndexinfo = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(showslides, 3000);
+
+        }
+
+
+
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function genresDropdown() {
+            document.getElementById("Genres-element").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.genresbutton')) {
+                var dropdowns = document.getElementsByClassName("genres-items");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
