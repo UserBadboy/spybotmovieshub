@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<style>
+    html {
+
+        font-size: 10px;
+        width: 100%;
+    }
+
+    body {
+
+        background-color: lightgray;
+
+    }
+
+
+    .nav-box {
+        width: 152rem;
+        background-color: white;
+        height: 8.5rem;
+        margin-top: 0px;
+    }
+
+
+    .menu-box {
+        width: 152rem;
+        height: 8.5rem;
+        position: relative;
+        float: right;
+
+    }
+
+    .menu-item {
+        font-size: 2rem;
+        display: block;
+
+    }
+
+    .list-item {
+        display: block;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .logo-heading {
+        position: absolute;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        font-size: x-large;
+
+    }
+
+    .logo {
+        position: absolute;
+        margin-top: 2rem;
+        margin-right: 3rem;
+        right: 0;
+        overflow: hidden;
+
+
+    }
+
+    /* genres box and items operation  */
+
+
+    .genres-box {}
+
+    .genresbutton {
+        cursor: pointer;
+
+    }
+
+    .genres-items {
+
+        display: none;
+
+    }
+
+
+    .genressub-item {
+        display: block;
+
+
+    }
+
+
+    @media screen and (max-width:800px) {
+
+        * {
+
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        html {
+            font-size: 10px;
+
+        }
+
+        body {
+
+            background-color: lightgray;
+
+        }
+
+
+        .nav-box {
+            width: 80rem;
+            background-color: white;
+            height: 8.5rem;
+            margin-top: 0px;
+            margin-left: 0rem;
+        }
+
+
+        .menu-box {
+            width: 38rem;
+            height: 8.5rem;
+            position: relative;
+            background-color: white;
+            float: right;
+        }
+
+        .menu-item {
+            position: absolute;
+            font-size: 2.5rem;
+            display: block;
+            margin-top: 8.5rem;
+
+        }
+
+        .list-item {
+
+            display: block;
+            text-decoration: none;
+            list-style: block;
+            background-color: lightskyblue;
+            color: black;
+padding-left: 2rem;
+
+        }
+
+        .list-item::after {
+
+            content: "";
+            line-height: 4rem;
+
+
+        }
+
+
+
+
+
+
+
+
+        .logo-heading {
+            position: absolute;
+            margin-top: 3rem;
+            margin-left: -40rem;
+            font-size: x-large;
+
+        }
+
+        .logo {
+            position: absolute;
+            margin-top: 2rem;
+            margin-right: 2rem;
+            right: 0;
+            overflow: hidden;
+
+
+        }
+
+        /* genres box and items operation  */
+
+
+        .genres-box {
+
+            background-color: rgb(69, 187, 174);
+
+        }
+
+        .genresbutton {
+            cursor: pointer;
+            font-size: 2.85rem;
+            width: 23rem;
+
+        }
+
+        .genres-items {
+
+            display: block;
+            background-color: rgb(217, 183, 183);
+
+        }
+
+
+        .genressub-item {
+            display: block;
+            text-decoration: none;
+            list-style: none;
+            color: black;
+            background-color: rgb(217, 183, 183);
+            padding-left: 2rem;
+
+        }
+
+        .genressub-item::after {
+            content: "";
+            line-height: 4rem;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+</style>
+
+
+<body>
+
+
+    <div class="nav-box">
+
+        <div class="menu-box">
+
+            <h2 class="logo-heading"> Spy-BotHub </h2>
+            <!--  Menu-Logo   -->
+            <span class="logo" style="font-size:30px;cursor:pointer" onclick="openmenu()">&#9776; </span>
+
+            <!--  Menu-Logo Ended  -->
+
+        </div>
+
+
+
+
+
+
+
+        <div class="menu-item" id="Mnu-items">
+            <a href="Index.html" class="list-item  align-rightmenu"> Home </a>
+            <a href="AllMovies.html" class="list-item  align-rightmenu"> Movies </a>
+            <a href="web-series.html" class="list-item  align-rightmenu"> Web-Series </a>
+            <a href="kids.html" class="list-item  align-rightmenu"> Kids </a>
+            <a href="tvshow.html" class="list-item  align-rightmenu"> Tv-Show </a>
+            <a href="Premium.html" class="list-item  align-rightmenu"> Premium </a>
+
+            <div class="genres-box">
+                <button class="genresbutton align-rightmenu" onclick="genresDropdown()"> Genres&#9663; </button>
+
+                <div id="Genres-element" class="genres-items">
+
+                    <a href="popular.html" class="genressub-item">Popular</a>
+                    <a href="crime.html" class="genressub-item">Crime</a>
+                    <a href="suspense.html" class="genressub-item">Suspense & Thriller</a>
+                    <a href="action.html" class="genressub-item">Action</a>
+                    <a href="fantasy.html" class="genressub-item">Sci-Fi & Fantasy</a>
+                    <a href="documentary.html" class="genressub-item">Documentary</a>
+                    <a href="horror.html" class="genressub-item">Horror</a>
+                    <a href="drama.html" class="genressub-item">Drama</a>
+                    <a href="war.html" class="genressub-item">War & Politics</a>
+                    <a href="comedy.html" class="genressub-item">Comedy</a>
+                    <a href="romance.html" class="genressub-item">Romance</a>
+                    <a href="anime.html" class="genressub-item">Anime</a>
+
+
+
+
+
+
+
+                </div>
+
+
+
+                <script>
+
+
+                    /* When the user clicks on the button, 
+                            toggle between hiding and showing the dropdown content 
+                    function genresDropdown() {
+                        document.getElementById("Genres-element").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function (event) {
+                        if (!event.target.matches('.genresbutton')) {
+                            var dropdowns = document.getElementsByClassName("genres-items");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+*/
+
+                    /*  -----------------------  Menu logo reacting using java-script   ---------------------      */
+
+                    function openmenu() {
+                        var showitem = document.getElementById("Mnu-items");
+                        if (showitem.style.display === "none") {
+                            showitem.style.display = "block"
+
+                        }
+                        else {
+                            showitem.style.display = "none"
+
+                        }
+
+                    }
+
+
+                    /*   Ended --------------------------------Menu logo reacting using java-script   -----------------------      */
+
+
+                    /*Gerenbutton      -------------------------------------------   */
+
+                    function genresDropdown() {
+                        var genresmenu = document.getElementById("Genres-element")
+                        if (genresmenu.style.display === "none") {
+                            genresmenu.style.display = "block"
+
+                        }
+
+                        else {
+
+                            genresmenu.style.display = "none"
+
+                        }
+
+
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </script>
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
